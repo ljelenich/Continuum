@@ -13,7 +13,7 @@ class PostDetailTableViewController: UITableViewController {
     //MARK: - Outlets
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var followButton: UIButton!
-    
+    @IBOutlet weak var buttonStackView: UIButton!
     
     //MARK: - Properties
     var post: Post? {
@@ -103,6 +103,7 @@ class PostDetailTableViewController: UITableViewController {
             DispatchQueue.main.async {
                 let followPostButtonText = found ? "Unfollow" : "Follow"
                 self.followButton.setTitle(followPostButtonText, for: .normal)
+                self.buttonStackView.layoutIfNeeded()
             }
         }
     }

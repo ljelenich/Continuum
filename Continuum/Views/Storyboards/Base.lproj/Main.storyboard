@@ -354,6 +354,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="0qH-uO-PLF"/>
                     <connections>
+                        <outlet property="buttonStackView" destination="DQd-KG-TVP" id="t6n-Nl-CpQ"/>
                         <outlet property="followButton" destination="oZn-gl-9hz" id="ahh-j4-088"/>
                         <outlet property="photoImageView" destination="DhD-8Z-GB6" id="ubi-y2-V19"/>
                     </connections>
